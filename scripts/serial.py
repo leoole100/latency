@@ -14,10 +14,10 @@ from scipy.stats import norm
 
 # %%
 # try to connect to a default port
-ser = serial.Serial('/dev/ttyACM0')
+ser = serial.Serial('/dev/ttyUSB0', 115200)
 
 # %%
-N = int(1e6)
+N = int(1e5)
 data = np.zeros((N, 2))
 start = time.time()
 
@@ -63,6 +63,6 @@ plt.yscale('log')
 plt.xscale('log')
 plt.xlabel('time in μs')
 plt.ylabel('rate in 1/μs')
-plt.savefig('../figures/plot.png')
+plt.savefig('../figures/pyserial.png')
 plt.show()
 # %%

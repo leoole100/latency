@@ -5,4 +5,7 @@ Often it is expected to be happening in a certain time.
 This repository is a collection of recorded times and tools.
 
 For a ping using PySerial 3.5 and a RP2040 with the default usb-cdc implementation the measured distribution is:
-![alt text](figures/pyserial_rp2040.png)
+![](figures/pyserial_rp2040.png)
+
+On a esp32 with a hardware serial port (CP2102) the latency is considerably higher:
+![](figures/pyserial_esp32.png)
